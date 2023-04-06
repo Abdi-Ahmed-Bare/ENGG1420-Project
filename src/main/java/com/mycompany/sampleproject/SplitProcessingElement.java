@@ -9,8 +9,10 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+// is a processing element
 class SplitProcessingElement implements ProcessingElement {
 
+    // create list of entries
     static public List<Entry> process(List<Entry> entries, int lines) throws IOException {
         List<Entry> result = new ArrayList<>();
         ArrayList<String> paths = new ArrayList<>();
@@ -65,6 +67,6 @@ class SplitProcessingElement implements ProcessingElement {
     }
     
 //    public static void main(String[] args) throws IOException {
-//        process(LocalEntry.GenerateListOfEntry("C:\\Users\\98910\\Documents\\NetBeansProjects\\Application\\dir3"), 3);
+//        process(LocalEntry.GenerateListOfEntry("insert directory here"), 3);
 //    }
 }
